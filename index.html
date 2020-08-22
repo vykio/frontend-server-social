@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialMe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="title">SocialMe</h1>
+        <div class="dev"></div>
+    </header>
+    <main>
+        <form class="post-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" class="u-full-width">
+            <label for="content">Content</label>
+            <textarea type="text" id="content" name="content" class="u-full-width"></textarea>
+            <button class="button-primary">Send!</button>
+        </form>
+        <div class="loading">
+            <img src="loading.gif" alt="">
+        </div>
+        <div class="posts"></div>
+    </main>
+
+    <script src="client.js"></script>
+</body>
+</html>
