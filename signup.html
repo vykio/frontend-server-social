@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="skeleton-alerts.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">Signup</h1>
+        <div class="dev"></div>
+    </header>
+    <main>
+        <div class="container">
+            <p class="alert alert-success" id="errorElement" style="display: none"></p>
+            <form class="signup-form">
+                <input type="text" id="username" name="username" class="u-full-width" placeholder="Username" required></input>
+                <div class="row">
+                    <div class="six columns">
+                        <input type="password" id="password" name="password" class="u-full-width" placeholder="Password" required></input>
+                    </div>
+                    <div class="six columns">
+                        <input type="password" id="password_confirm" name="password_confirm" class="u-full-width" placeholder="Confirm password" required></input>
+                    </div>
+                </div>
+                
+                <button class="button-primary u-full-width">Signup</button>
+            </form>
+            <!--<p class="alert alert-success">...</p>-->
+        </div>
+        
+    </main>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+    <script src="signup.js"></script>
+</body>
+</html>
